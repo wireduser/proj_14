@@ -3,7 +3,7 @@ package com.education_wired_.work1;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	/*
         MyPhoneBook phoneBook = new MyPhoneBook();
         phoneBook.addRecord("tom","555-55-55");
         phoneBook.addRecord("jerry","555-55-66");
@@ -14,5 +14,12 @@ public class Main {
         phoneBook.addRecord("bamby","555-77-99");
 
         phoneBook.printPhoneRecords();
+        System.out.println("---sort---");
+        phoneBook.sortByName();
+
+	 */
+	MyPhone phone = new MyPhone();
+	phone.switchOn();
+
     }
 }
