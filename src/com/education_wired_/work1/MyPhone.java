@@ -22,8 +22,9 @@ public class MyPhone {
         System.out.println("Loading is complete");
     }
 
-    public void call(int nomer){
-        book.
+    public void call(int number){
+        System.out.println("Calling to - "+book.phoneRecords[number].toString());
+
     }
 
 
@@ -105,4 +106,27 @@ public class MyPhone {
 
     }
 
+    public class Camera{
+
+    }
+
+    public class  Bluetooth {
+
+    }
+
+    public class PowerOnButton{
+
+    }
+
+    public class PhoneBattery{
+
+    }
+
+    public class PhoneDisplay{
+
+    }
+
+    public class PhoneSpeaker{
+
+    }
 }

@@ -20,6 +20,7 @@ public class Main {
 	 */
 	MyPhone phone = new MyPhone();
 	phone.switchOn();
+	phone.call(4);
 
     }
 }
