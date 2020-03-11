@@ -9,5 +9,10 @@ public class Main {
         myMixer.shuffle();
         arrInt = myMixer.getArray();
         System.out.println(Arrays.toString(arrInt));
+        String[]arrSt = {"1","2","3","4","5","6","7","8","9","0"}  ;
+        Mixer<String> myMixerStr = new Mixer<>(arrSt);
+        myMixerStr.shuffle();
+        arrSt = myMixerStr.getArray();
+        System.out.println(Arrays.toString(arrSt));
     }
 }
