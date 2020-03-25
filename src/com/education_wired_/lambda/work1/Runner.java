@@ -7,29 +7,20 @@ public class Runner {
     public void run(){
         Integer[] intArr = makeIntArr();
         System.out.println("---New array---");
-        for (Integer e: intArr
-        ) {
-            System.out.println(e);
-        }
+        System.out.println(Arrays.toString(intArr));
         Arrays.sort(intArr,( s1, s2) -> (s2 - s1));
         System.out.println("---Sorted---");
-        for (Integer e: intArr
-             ) {
-            System.out.println(e);
-        }
+        System.out.println(Arrays.toString(intArr));
         String[] strArr = makeStrArr();
         Arrays.sort(strArr,(s1,s2)->(s2.compareTo(s1)));
-        for (String e: strArr
-             ) {
-            System.out.println(e);
-        }
+        System.out.println(Arrays.toString(strArr));
 
     }
 
 
     private Integer[] makeIntArr(){
         Integer array[] = new Integer[20];
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < array.length; i++) {
             array[i]= (int) (Math.random()*100-50);
         }
         return array;
