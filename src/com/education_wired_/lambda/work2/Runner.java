@@ -7,16 +7,16 @@ import java.util.function.Predicate;
 
 public class Runner {
     public void run(){
-        Predicate<Integer>isEven = x -> (x % 2)==0;
-        Predicate<String>stringPredicate = str -> str.substring(0,1).toUpperCase().equals("A");
+
+        //Predicate<String>stringPredicate = str -> str.substring(0,1).toUpperCase().equals("A");
         System.out.println("---New String array---");
-        printStr(makeStrArr(),stringPredicate);
+        printStr(makeStrArr(),str -> str.startsWith("a"));
         System.out.println("---New Integer array---");
         Integer[] intArr= makeIntArr();
         for (Integer e: intArr  ) {
             System.out.println(e);
         }
-        System.out.println("Summ Even = "+sumEven(intArr,isEven));
+        System.out.println("Summ Even = "+sumEven(intArr, x -> (x % 2)==0));
 
 
     }

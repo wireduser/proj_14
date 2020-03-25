@@ -1,8 +1,9 @@
 package com.education_wired_.lambda.work3;
 
+@FunctionalInterface
 public interface MyConverter {
-    public abstract String converStr(String str);
-    public static boolean isNull(String str){
-        return str == null;
+    String converStr(String str);
+    static boolean isNull(String str){
+        return str == null?true:str.equals("");
     };
 }

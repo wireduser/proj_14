@@ -10,6 +10,7 @@ import java.util.function.Function;
 public class Runner {
     public void run(){
         List<String > stringList = Arrays.asList(makeStrArr());
+        /*
         MyConverter conver = new MyConverter() {
             @Override
             public String converStr(String str) {
@@ -18,6 +19,8 @@ public class Runner {
             }
         };
         updateList(stringList,conver);
+        */
+        updateList(stringList,String::toUpperCase);
     }
 
     private void updateList(List<String> stringList, MyConverter converter){
