@@ -1,7 +1,7 @@
 package com.education_wired_.threads.work3;
 
 public class Counter implements Runnable{
-    Storage number;
+    private Storage number;
 
     public Counter(Storage number) {
         this.number = number;
@@ -13,6 +13,7 @@ public class Counter implements Runnable{
         int count =1;
         while (count <1000){
             number.setNumber(count++);
+
         }
     }
 }

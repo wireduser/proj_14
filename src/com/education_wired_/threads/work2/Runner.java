@@ -1,18 +1,20 @@
 package com.education_wired_.threads.work2;
 
+import java.util.Arrays;
+
 public class Runner {
         public void run() throws InterruptedException {
-                MySumCount count = new MySumCount();
-                count.setMyArray(makeIntArr(100));
-                count.setStartIndex(5);
-                count.setStopIndex(30);
+                int[] arr = makeIntArr(100);
+                System.out.println(Arrays.toString(arr));
+                MySumCount count = new MySumCount(5,7,arr);
+
                 count.start();
                 count.join();
                 System.out.println(count.getResultSum());
-                MySumCount_Runnable rCount = new MySumCount_Runnable();
-                rCount.setMyArray(makeIntArr(100));
-                rCount.setStartIndex(5);
-                rCount.setStopIndex(30);
+
+
+                MySumCount_Runnable rCount = new MySumCount_Runnable(5,7, arr);
+
                 Thread ruunable = new Thread(rCount);
                 ruunable.start();
                 ruunable.join();

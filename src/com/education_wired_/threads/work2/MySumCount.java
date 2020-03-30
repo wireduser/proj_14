@@ -6,36 +6,16 @@ public class MySumCount extends Thread {
     int[]myArray;
     long resultSum;
 
-    public int getStartIndex() {
-        return startIndex;
-    }
-
-    public void setStartIndex(int startIndex) {
-        this.startIndex = startIndex;
-    }
-
-    public int getStopIndex() {
-        return stopIndex;
-    }
-
-    public void setStopIndex(int stopIndex) {
-        this.stopIndex = stopIndex;
-    }
-
-    public int[] getMyArray() {
-        return myArray;
-    }
-
-    public void setMyArray(int[] myArray) {
-        this.myArray = myArray;
-    }
 
     public long getResultSum() {
         return resultSum;
     }
 
-    public void setResultSum(long resultSum) {
-        this.resultSum = resultSum;
+
+    public MySumCount(int startIndex, int stopIndex, int[] myArray) {
+        this.startIndex = startIndex;
+        this.stopIndex = stopIndex;
+        this.myArray = myArray;
     }
 
     @Override
